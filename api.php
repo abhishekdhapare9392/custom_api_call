@@ -1,11 +1,11 @@
 <?php
 /**
- * @package api_call
+ * @package custom_api_call
  * @version 1.0.0v
  */
 /*
 Plugin Name: Custom API Call
-Plugin URI: http://wordpress.org/plugins/hello-dolly/
+Plugin URI: http://wordpress.org/plugins/custom_api_call/
 Description: This plugin is can user by only Wordpress Developer. Because this plugin need backend customization. This Plugin developed for call external api and and display the data on front view using a shortcode. To use this plugin user need basic php and wordpress plugin development knowledge.  
 Author: Abhishek Dhapare
 Version: 1.0.0v
@@ -114,9 +114,9 @@ function api_css() {
 	</style>
 	";
 }
-add_shortcode('featured-listed-jobs', 'api_call');
+add_shortcode('data_list_view', 'api_call');
 
-// On editor write the shortcode as following: [featured-listed-jobs] and you can see the data on page.
+// On editor write the shortcode as following: [data_list_view] and you can see the data on page.
 
 add_action( 'admin_head', 'api_css' );
 
